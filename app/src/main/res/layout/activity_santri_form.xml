@@ -9,12 +9,12 @@
 
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Nama Asrama Lama"
+        android:hint="Nama Santri"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
@@ -22,38 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="id"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="New Dorm"
-        android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <View
         android:id="@+id/view2"
@@ -72,7 +41,7 @@
         android:fontFamily="@font/titillium_web_bold"
         android:text="e-Saku"
         android:textColor="#0D1F3C"
-        android:textSize="36dp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/view2"
@@ -84,10 +53,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/mulai_btn"
         android:text="-"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
         tools:layout_editor_absoluteX="25dp" />
 
 

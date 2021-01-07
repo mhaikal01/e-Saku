@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SantriActivity"></activity>
+        <activity android:name=".SantriListActivity"></activity>
+        <activity android:name=".SantriActivity" />
         <activity android:name=".SantriFormActivity" />
         <activity android:name=".MoneyActivity" />
         <activity android:name=".HomeActivity" />

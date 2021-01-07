@@ -2,20 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="nama santri"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/tvId"
         app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@+id/tvId"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,10 +25,10 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/ic_baseline_account_circle_24" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -39,35 +38,37 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/simpanUangBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:onClick="simpanMoney"
         android:layout_marginEnd="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/ambilUangBtn"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoney"
         app:srcCompat="@drawable/simpan_btn" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/ambilUangBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="36dp"
+        android:onClick="ambilMoney"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoney"
         app:srcCompat="@drawable/ambil_btn" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tvMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Rp. 150.000"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <View
         android:id="@+id/view3"
@@ -86,10 +87,37 @@
         android:fontFamily="@font/titillium_web_bold"
         android:text="e-Saku"
         android:textColor="#0D1F3C"
-        android:textSize="36dp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dltBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="deleteSantri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ambilUangBtn"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/hapus_btn" />
+
+    <ImageButton
+        android:id="@+id/edtBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="editSantri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dltBtn"
+        app:layout_constraintTop_toBottomOf="@+id/simpanUangBtn"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/edit_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
