@@ -15,11 +15,12 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
     }
 
-    fun addSantri(view: View) {
-        val type = EDIT_SANTRI
-        val intent = Intent(this, SantriFormActivity::class.java).apply {
-            putExtra(EXTRA_FORM_TYPE, type)
-        }
+    fun toSantri(view: View) {
+//        val type = EDIT_SANTRI
+        val intent = Intent(this, SantriFormActivity::class.java)
+//            .apply {
+//            putExtra(EXTRA_FORM_TYPE, type)
+//        }
         startActivity(intent)
     }
 }
